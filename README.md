@@ -1,4 +1,4 @@
-![alt text](https://studio.youtube.com/channel/UCUUTdohVElFLSP4NBnlPEwA/editing/images)
+![alt text](https://github.com/[JamesTurland]/[JimsGarage]/blob/[main]/Logo/Jim's Garage-1(2).png?raw=true)
 
 # JimsGarage
 Homelab Goodies
