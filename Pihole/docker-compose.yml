@@ -27,7 +27,6 @@ services:
 
   pihole:
     container_name: pihole
-    user: 1000:1000
     image: pihole/pihole:latest
     ports:
       - "53:53/tcp"
@@ -69,8 +68,6 @@ services:
       - "traefik.http.routers.pihole-secure.service=pihole"
       - "traefik.http.services.pihole.loadbalancer.server.port=80"
       - "traefik.docker.network=proxy"
-    security_opt:
-      - no-new-privileges:true
 
 networks:
   pihole_internal:
