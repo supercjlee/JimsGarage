@@ -76,5 +76,6 @@ networks:
      ipam:
        config:
          - subnet: 172.70.9.0/29
+     name: pihole_internal
   proxy:
     external: true
