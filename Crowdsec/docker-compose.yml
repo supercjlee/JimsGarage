@@ -6,8 +6,6 @@ services:
     environment:
       GID: "${GID-1000}"
       COLLECTIONS: "crowdsecurity/linux crowdsecurity/traefik"
-    # depends_on:  #uncomment if you're running traefik in the same compose file
-    #   - 'traefik'
     volumes:
       - /home/ubuntu/docker/crowdsec/acquis.yaml:/etc/crowdsec/acquis.yaml
       - /home/ubuntu/docker/crowdsec/db:/var/lib/crowdsec/data/
