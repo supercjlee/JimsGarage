@@ -6,7 +6,7 @@ services:
     environment:
       GID: "${GID-1000}"
       COLLECTIONS: "crowdsecurity/linux crowdsecurity/traefik"
-    # depends_on:  #uncomment if running traefik in the same compose file
+    # depends_on:  #uncomment if you're running traefik in the same compose file
     #   - 'traefik'
     volumes:
       - /home/ubuntu/docker/crowdsec/acquis.yaml:/etc/crowdsec/acquis.yaml
@@ -26,7 +26,7 @@ services:
       CROWDSEC_BOUNCER_API_KEY: create_a_random_api_key
       CROWDSEC_AGENT_HOST: crowdsec:8080
     networks:
-      - proxy # same network as traefik + crowdsec
+      - proxy
     depends_on:
       - crowdsec
     restart: unless-stopped
